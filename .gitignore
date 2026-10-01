@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Temporary files the browser leaves while writing, and the folder probe.
+*.crswap
+flashcards-probe-*.txt

@@ -1,0 +1,8 @@
+# Text files are stored with LF line endings on every system…
+* text=auto eol=lf
+
+# …except the Windows start script, which needs CRLF to run.
+*.bat text eol=crlf
+
+*.png binary
+*.woff2 binary

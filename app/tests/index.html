@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob: data:; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="color-scheme" content="light dark">
+  <title>Flashcards — tests</title>
+  <link rel="icon" href="../icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="tests.css">
+</head>
+<body>
+  <main id="view">
+    <div class="page-head">
+      <h1>Tests</h1>
+      <a class="btn" href="../">Back to the app</a>
+    </div>
+    <p id="summary" class="test-summary">Running…</p>
+    <p class="muted">These run in this browser against an in-memory folder and against real file handles in the browser's private storage. They never touch your data folder.</p>
+    <p>
+      <button id="real-folder" class="btn" type="button" hidden>Also test a folder on disk…</button>
+    </p>
+    <p id="real-folder-note" class="test-summary muted">Pick any folder: the storage tests are repeated inside a scratch subfolder, which is deleted afterwards. Nothing else in the folder is read or changed.</p>
+    <div id="results"></div>
+  </main>
+  <script type="module" src="run-browser.js"></script>
+</body>
+</html>
